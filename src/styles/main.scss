@@ -9,7 +9,7 @@ body {
   width: 710px;
   display: flex;
   flex-wrap: wrap;
-  margin: 10px auto;
+  margin: 30px auto;
 
   div {
     display: none;
@@ -21,18 +21,19 @@ body {
     background-color: #eee;
     border: 1px solid #000;
     text-align: center;
+    transition: background-color 0.7s;
 
     &:hover {
       cursor: pointer;
       background-color: pink;
-      animation: hovers 0.5s ease-out forwards;
+      animation: hovers 0.7s ease-out forwards;
     }
   }
 }
 
 @keyframes hovers {
   100% {
-    margin-top: -20px;
+    transform: translateY(-20px);
   }
 }
 
